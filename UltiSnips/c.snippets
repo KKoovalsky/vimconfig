@@ -1,0 +1,85 @@
+snippet fdoxyh
+/**
+ * @file	${1:`!v vim_snippets#Filename('$1.h', 'title')`}
+ * @brief	$0
+ * @author	Kacper Kowalski - kacper.s.kowalski@gmail.com
+ */
+endsnippet
+
+snippet fdoxyc
+/**
+ * @file	${1:`!v vim_snippets#Filename('$1.c', 'title')`}
+ * @brief	$0
+ * @author	Kacper Kowalski - kacper.s.kowalski@gmail.com
+ */
+endsnippet
+
+snippet fdoxyhpp
+/**
+ * @file	${1:`!v vim_snippets#Filename('$1.hpp', 'title')`}
+ * @brief	$0
+ * @author	Kacper Kowalski - kacper.s.kowalski@gmail.com
+ */
+endsnippet
+
+snippet fdoxycpp
+/**
+ * @file	${1:`!v vim_snippets#Filename('$1.cpp', 'title')`}
+ * @brief	$0
+ * @author	Kacper Kowalski - kacper.s.kowalski@gmail.com
+ */
+endsnippet
+
+snippet fdoxydefgroup "Doxygen defgroup tag"
+/**
+ *	@defgroup $1	$2
+ *	@brief $3
+ *	@{
+ */
+$4
+/**	@} */ // End of group $1
+endsnippet
+
+snippet muftest
+MU_TEST($1)
+{
+	$0
+}
+
+MU_TEST_SUITE($2)
+{
+    MU_RUN_TEST($1);
+}
+
+void ${3:`!v vim_snippets#Filename('$1', 'title')`}()
+{
+    MU_RUN_SUITE($2);
+    MU_REPORT();
+}
+endsnippet
+
+snippet iguard "Include header once only guard"
+#ifndef ${2:`!p
+if not snip.c:
+	import string
+	name = re.sub(r'[^A-Za-z0-9]+','_', snip.fn).upper()
+	snip.rv = ('%s' % (name)).upper()
+else:
+	snip.rv = snip.c`}
+#define $2
+
+${VISUAL}$1
+
+#endif /* $2 */
+endsnippet
+
+snippet fornobr "For without brackets"
+for (int ${2:i} = 0; $2 < ${1:count}; ${3:++}$2)
+	${4}
+endsnippet
+
+snippet fcommentruler "Comment rulers used to separate code"
+// --------------------------------------------------------------------------------------------------------------------
+// $0
+// --------------------------------------------------------------------------------------------------------------------
+endsnippet
