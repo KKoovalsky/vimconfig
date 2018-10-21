@@ -136,6 +136,7 @@ snippet ctestfiletemplate
  * @brief	$2
  * @author	Kacper Kowalski - kacper.s.kowalski@gmail.com
  */
+#include "unity.h"
 $0
 // --------------------------------------------------------------------------------------------------------------------
 // DECLARATION OF THE TEST CASES
@@ -148,6 +149,9 @@ $0
 // --------------------------------------------------------------------------------------------------------------------
 // EXECUTION OF THE TESTS
 // --------------------------------------------------------------------------------------------------------------------
+void test_$3()
+{
+}
 
 // --------------------------------------------------------------------------------------------------------------------
 // DEFINITION OF THE TEST CASES
@@ -159,3 +163,15 @@ $0
 
 endsnippet
 
+snippet freertos_inc_task
+#include "FreeRTOS.h"
+#include "task.h"
+$0
+endsnippet
+
+snippet privatecfunction
+static void $1();
+static void $1()
+{
+}
+endsnippet

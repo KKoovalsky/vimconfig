@@ -87,9 +87,9 @@ let g:UltiSnipsJumpForwardTrigger="<c-m>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsListSnippets="<c-n>"
 
-let g:ycm_extra_conf_globlist = ['~/Workspace/AgriWatch/*']
+let g:ycm_extra_conf_globlist = ['~/.vim/*','~/Workspace/AgriWatch/*']
 let g:ycm_max_diagnostics_to_display = 250
-let g:ycm_show_diagnostics_ui = 0
+let g:ycm_show_diagnostics_ui = 1
 
 let g:BASH_Ctrl_j="<c-p>"
 
@@ -127,3 +127,6 @@ hi HighlightedyankRegion cterm=reverse gui=reverse ctermfg=187
 " Highlight search result
 :set hlsearch
 hi Search ctermbg=lightblue
+
+" Show filename in statusline
+:set statusline=%f
