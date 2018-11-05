@@ -175,3 +175,15 @@ static void $1()
 {
 }
 endsnippet
+
+snippet dynks_iot_creds
+#ifdef $1
+#define IOT_SERVER_HOSTNAME "$2$3"
+#define URI_PATH1 "v1"
+#define URI_PATH2 "$4"
+#define URI_PATH3 "data"
+#define TENANT "$2"
+#define ID "$5"
+#endif /* $1 */
+$0
+endsnippet
