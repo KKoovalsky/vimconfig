@@ -69,6 +69,10 @@ nnoremap <C-H> <C-W><C-H>
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 
+" Tab navigation like Firefox.
+nnoremap <C-t> :tabnew<CR>:Explore<CR>
+inoremap <C-t> <Esc>:tabnew<CR>:Explore<CR>
+
 " Show me line numbers for better navigataion and debugging
 set number
 " Set its width
@@ -127,3 +131,4 @@ hi Search ctermbg=lightblue
 
 " Show filename in statusline
 :set statusline=%f
+
