@@ -37,10 +37,11 @@ filetype plugin indent on    " required
 set exrc
 set secure
 
-set tabstop=4
-set softtabstop=4
+set tabstop=8
+set softtabstop=0
+set expandtab
 set shiftwidth=4
-set noexpandtab
+set smarttab
 
 :imap jk <Esc>
 
