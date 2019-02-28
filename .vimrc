@@ -109,7 +109,7 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
-let g:ycm_extra_conf_globlist = ['~/.vim/*','~/Workspace/AgriWatch/*','~/Workspace/Dynks*']
+let g:ycm_extra_conf_globlist = ['~/.vim/*','~/Workspace/AgriWatch/*','~/Workspace/Dynks*','~/Workspace/Blinker*','~/Workspace/Therm*','~/Workspace/Magnetoblinker*']
 let g:ycm_max_diagnostics_to_display = 1000
 let g:ycm_complete_in_comments = 1
 let g:ycm_complete_in_strings = 1
@@ -117,6 +117,7 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_show_diagnostics_ui = 1
+let g:ycm_disable_for_files_larger_than_kb = 0
 
 :nmap <c-i> :YcmCompleter GoToInclude<CR>
 :nmap <F3> :YcmCompleter GoToDefinition<CR>
@@ -133,3 +134,5 @@ hi Search ctermbg=lightblue
 " Show filename in statusline
 :set statusline=%f
 
+" Show character count in visual mode
+:set showcmd
