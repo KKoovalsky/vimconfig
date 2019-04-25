@@ -152,7 +152,7 @@ ${VISUAL}$0
 endsnippet
 snippet ctestfiletemplate
 /**
- * @file	${1:`!v vim_snippets#Filename('$1.c', 'title')`}
+ * @file	${1:`!v vim_snippets#Filename('$1.', 'title')`}`!v expand('%:e')`
  * @brief	$2
  * @author	Kacper Kowalski - $4
  */
@@ -335,4 +335,8 @@ endsnippet
 
 snippet mailprivate
 kacper.s.kowalski@gmail.com
+endsnippet
+
+snippet unittestdecl
+static void UNIT_TEST_$0();
 endsnippet
