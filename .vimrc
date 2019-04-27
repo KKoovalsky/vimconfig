@@ -18,6 +18,9 @@ Plugin 'kawaz/batscheck.vim'
 Plugin 'martinda/Jenkinsfile-vim-syntax'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'machakann/vim-highlightedyank'
+Plugin 'itchyny/lightline.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of Plugins must be added before the following line
 call vundle#end()            " required
@@ -136,3 +139,9 @@ hi Search ctermbg=lightblue
 
 " Show character count in visual mode
 :set showcmd
+
+" For the lightline plugin
+set laststatus=2
+
+" Map toggle Tagbar
+nmap <F8> :TagbarToggle<CR>
