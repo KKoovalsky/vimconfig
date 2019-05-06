@@ -21,6 +21,7 @@ Plugin 'machakann/vim-highlightedyank'
 Plugin 'itchyny/lightline.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'rdnetto/YCM-Generator'
 
 " All of Plugins must be added before the following line
 call vundle#end()            " required
