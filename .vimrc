@@ -122,6 +122,7 @@ let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_show_diagnostics_ui = 1
 let g:ycm_disable_for_files_larger_than_kb = 0
+let g:ycm_collect_identifiers_from_tags_files = 1
 
 :nmap <c-i> :YcmCompleter GoToInclude<CR>
 :nmap <F3> :YcmCompleter GoToDefinition<CR>
@@ -146,3 +147,6 @@ set laststatus=2
 
 " Map toggle Tagbar
 nmap <F8> :TagbarToggle<CR>
+
+let @q = 'V}ky/EXECUT}kkp}kklllllllllllcRUN_TEST(jkV}kk:s/()/)/g/DECLARATION OF THE TEST CASESjjVjjjy/DEFINITION OF THE TESTjpV}:s/;/{}\r/g:ClangFormat'
+let @g = 'V}k"ky/EXECUTION}kk"kp}kktUcRUN_TEST(jkV}:s/()/)/g/DEFINITION OF PRIVATE FUNkk"kPV}:s/;/{}\r/g:ClangFormat:noh'
