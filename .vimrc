@@ -22,6 +22,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rdnetto/YCM-Generator'
+Plugin 'tpope/vim-fugitive'
 
 " All of Plugins must be added before the following line
 call vundle#end()            " required
@@ -144,6 +145,16 @@ hi Search ctermbg=lightblue
 
 " For the lightline plugin
 set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'powerline',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified', 'absolutepath' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ }
 
 " Map toggle Tagbar
 nmap <F8> :TagbarToggle<CR>
