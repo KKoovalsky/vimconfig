@@ -23,6 +23,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'tpope/vim-fugitive'
+Plugin 'skywind3000/asyncrun.vim'
 
 " All of Plugins must be added before the following line
 call vundle#end()            " required
@@ -159,5 +160,10 @@ let g:lightline = {
 " Map toggle Tagbar
 nmap <F8> :TagbarToggle<CR>
 
+" AsyncRun configuration
+:let g:asyncrun_open = 8
+:let g:asyncrun_bell = 10
+
+" Macros for fast unit tests in C handling
 let @q = 'V}ky/EXECUT}kkp}kklllllllllllcRUN_TEST(jkV}kk:s/()/)/g/DECLARATION OF THE TEST CASESjjVjjjy/DEFINITION OF THE TESTjpV}:s/;/{}\r/g:ClangFormat'
 let @g = 'V}k"ky/EXECUTION}kk"kp}kktUcRUN_TEST(jkV}:s/()/)/g/DEFINITION OF PRIVATE FUNkk"kPV}:s/;/{}\r/g:ClangFormat:noh'
