@@ -164,6 +164,8 @@ nmap <F8> :TagbarToggle<CR>
 " AsyncRun configuration
 :let g:asyncrun_open = 8
 :let g:asyncrun_bell = 10
+nmap <F10> :AsyncRun 
+
 
 " Macros for fast unit tests in C handling
 let @q = 'V}ky/EXECUT}kkp}kklllllllllllcRUN_TEST(jkV}kk:s/()/)/g/DECLARATION OF THE TEST CASESjjVjjjy/DEFINITION OF THE TESTjpV}:s/;/{}\r/g:ClangFormat'
