@@ -166,7 +166,13 @@ nmap <F8> :TagbarToggle<CR>
 :let g:asyncrun_bell = 10
 nmap <F10> :AsyncRun 
 
+" =====================================================================================================================
+" MACROS FOR C PROGRAMMING
+" =====================================================================================================================
 
 " Macros for fast unit tests in C handling
 let @q = 'V}ky/EXECUT}kkp}kklllllllllllcRUN_TEST(jkV}kk:s/()/)/g/DECLARATION OF THE TEST CASESjjVjjjy/DEFINITION OF THE TESTjpV}:s/;/{}\r/g:ClangFormat'
 let @g = 'V}k"ky/EXECUTION}kk"kp}kktUcRUN_TEST(jkV}:s/()/)/g/DEFINITION OF PRIVATE FUNkk"kPV}:s/;/{}\r/g:ClangFormat:noh'
+
+" Macro which makes definitions of C functions from declarations
+let @b = 'V}:s/;/{}\r/g:ClangFormat'
