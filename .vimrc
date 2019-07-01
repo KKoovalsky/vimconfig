@@ -162,7 +162,7 @@ let g:lightline = {
 nmap <F8> :TagbarToggle<CR>
 
 " AsyncRun configuration
-:let g:asyncrun_open = 8
+:let g:asyncrun_open = 14
 :let g:asyncrun_bell = 10
 nmap <F10> :AsyncRun 
 
